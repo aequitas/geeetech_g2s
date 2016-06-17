@@ -213,10 +213,23 @@ Here are some standard links for getting your machine calibrated:
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 // runtime change by M301 P19.56 I0.71 D134.26
 //GEEETECH G2S PRO
-  #define  DEFAULT_Kp 12
-  #define  DEFAULT_Ki 0.49
-  #define  DEFAULT_Kd 77
+  // #define  DEFAULT_Kp 12
+  // #define  DEFAULT_Ki 0.49
+  // #define  DEFAULT_Kd 77
 
+  // fan 100%
+  // #define  DEFAULT_Kp 14.39
+  // #define  DEFAULT_Ki 0.62
+  // #define  DEFAULT_Kd 83.09
+
+  // fan 50%
+  // #define  DEFAULT_Kp 13.95
+  // #define  DEFAULT_Ki 0.63
+  // #define  DEFAULT_Kd 77.83
+
+  #define  DEFAULT_Kp 13.95
+  #define  DEFAULT_Ki 0.63
+  #define  DEFAULT_Kd 77.83
 
   // Ultimaker
 	//    #define  DEFAULT_Kp 22.2
@@ -264,9 +277,13 @@ Here are some standard links for getting your machine calibrated:
   #define PID_BED_INTEGRAL_DRIVE_MAX MAX_BED_POWER //limit for the integral term
 
 // HEATER BED and glass plate GEETER
-    #define  DEFAULT_bedKp 159.62
-    #define  DEFAULT_bedKi 31.28
-    #define  DEFAULT_bedKd 203.61
+  // #define  DEFAULT_bedKp 159.62
+  // #define  DEFAULT_bedKi 31.28
+  // #define  DEFAULT_bedKd 203.61
+
+  #define  DEFAULT_bedKp 104.07
+  #define  DEFAULT_bedKi 7.96
+  #define  DEFAULT_bedKd 340.16
 
   //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
@@ -357,7 +374,7 @@ Here are some standard links for getting your machine calibrated:
    #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET+2)
 
   // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
-  #define DELTA_PRINTABLE_RADIUS 104
+  #define DELTA_PRINTABLE_RADIUS 90
 
   // Added from: http://www.thingiverse.com/thing:745523
   #define SIN_58 0.8480480961564259
